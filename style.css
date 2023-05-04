@@ -1,1 +1,112 @@
-
+#compradores {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .comprador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comprador.pago {
+    background-color: #e1f7d5;
+  }
+  
+  .comprador span {
+    font-size: 16px;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:disabled {
+    background-color: #ccc;
+    cursor: default;
+  }
+  /* Estilos padrão para desktop */
+  #compradores {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .comprador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comprador.pago {
+    background-color: #e1f7d5;
+  }
+  
+  .comprador span {
+    font-size: 16px;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:disabled {
+    background-color: #ccc;
+    cursor: default;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 600px) {
+    #compradores {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  
+    .comprador {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .comprador span:first-child {
+      margin-bottom: 5px;
+    }
+  
+    .comprador span:last-child {
+      font-size: 12px;
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+  
